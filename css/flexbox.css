@@ -7,3 +7,8 @@ etiqueta padre de los items, en este caso el "header" contiene la clase principa
 	align-items: center;
 	justify-content: space-between;					/*espacio entre elementos*/
 }
+
+.headerPrincipal-nav{
+	display: flex;
+	
+}

@@ -1,14 +1,3 @@
 /*Para trabajar con flexbox buscamos que los items dentro de un div o container hereden las estructura de la
 etiqueta padre de los items, en este caso el "header" contiene la clase principal (headerPrincipal) y el container
 (div class="container") funcionara como "flex"*/
-
-.headerPrincipal .container{                        /*se llama a la calse padre seguido del container flex*/
-	display: flex;									/*se aplica la propiedad "flex" para alienear elementos*/
-	align-items: center;
-	justify-content: space-between;					/*espacio entre elementos*/
-}
-
-.headerPrincipal-nav{
-	display: flex;
-	
-}

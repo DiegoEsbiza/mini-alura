@@ -1,0 +1,28 @@
+/*para el footer se dividio la pantalla en cuartos:  un 75% se utillizo en el container 
+"patrocinadores- list", mientras que el 25% restante se utilizo para "contacto-form".
+
+en el container se utilizo un 70% para la distribucion de los items mientras que el 5% 
+restante fue para aplicar un margen derecho.
+
+se utilizo "space-arround" para dar espacio alrrededor de los items*/
+
+.rodapePrincipal-patrocinadores .container {     
+	display: flex;								  /*display:  flex para alinear items en fila*/
+	justify-content: space-between;               /*espacio entre items separando uno del otro*/
+}
+
+.rodapePrincipal-patrocinadores-list {            /*la lista ocupara 75% del espacio*/
+	display: flex;                                /*alineando items en fila*/
+	align-items: center;                          /*centrado de elemntos*/
+	justify-content: space-around;				  /*espacio alrededor de los items*/
+	width: 70%;                                   /*el tamaño total de la calse sera de %70*/
+	margin-right: 5%;							  /*el %5 restante sera de margen derecho*/
+}
+
+.rodapePrincipal-contatoForm{                     /*el %25 restante sera el tamaño del form*/
+	width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset{            
+	display: flex;								  /*display:  flex para alinear items en fila*/
+}

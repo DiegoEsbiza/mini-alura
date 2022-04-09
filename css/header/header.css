@@ -1,0 +1,18 @@
+/*para el header se aplico a la clase "container" de la calse padre "header principal un "display: flex" para alinear
+los items en fila.
+se aplico "align-items:  center" para centrarlos
+finalmente se aplico "justify-content: space between" para darle una separacion entre los items
+
+finalente a la clase "headerPrincipal-nav" se le aplico un "display: flex" para alinear en fila todos
+los items del header */
+
+.headerPrincipal .container{                        /*se llama a la calse padre seguido del container flex*/
+	display: flex;									/*se aplica la propiedad "flex" para alienear elementos*/
+	align-items: center;                            /*centra los elementos*/
+	justify-content: space-between;					/*espacio entre elementos*/
+}
+
+.headerPrincipal-nav{
+	display: flex;
+	
+}

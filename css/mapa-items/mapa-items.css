@@ -1,0 +1,11 @@
+/*se alinearan en fila los items con "display:  flex"
+con la herramienta "flex-direction" se dara el sentido en el que los items se alinearan. por defecto, al usar flex los items
+se alinean en fila (flex-direction: row), para cambiar este comportamiento se usara "flex-direction:  column" que alieneara
+los items en columna (uno debajo del otro)*/
+
+.rodapePrincipal-navMap-list{
+	display: flex;             	  			/*alinea los items en fila*/
+	flex-direction: column;         		/*modifica la alineacion anterior, reorganiza los items en columna*/
+	height: 250px;                          /*aplicar altura limita las columnas a un tamaño especifico*/
+	flex-wrap: wrap;						/*quiebra la linea una vez alcanzada la medida anterior (250px de altura) */ 
+}

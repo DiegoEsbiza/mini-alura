@@ -1,0 +1,20 @@
+/*Se aplicaran 2 "display: flex", uno a la clase padre "cursos" (ul) para que afecte a todos los 
+elementos "hijo" y luego un "display:  flex" a la clase "link" (li) para romper la superposicion
+Al aplicar "display: flex" se superponen los elementos por no tener un tamaño definido.
+esto se resolvera en la seccion "links".
+se aplico tambien un "flex-wrap:  wrap" para que se quiebre la linea de items al alcanzar
+la medida indicada en link (width: 23%)*/
+
+.contenidoPrincipal-cursos{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/*Se aplico un display flex y un tamaño especifico,
+el container de un tamaño de 100% se dividio en 5, por tanto, el width sera de 23%
+para dividir las columnas en 4 elementos y tengan un margen adicional*/
+
+.contenidoPrincipal-cursos-link{
+	display: flex;
+	width: 23%;
+}

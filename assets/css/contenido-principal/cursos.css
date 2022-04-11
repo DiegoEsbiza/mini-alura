@@ -18,3 +18,19 @@ para dividir las columnas en 4 elementos y tengan un margen adicional*/
 	display: flex;
 	width: 23%;
 }
+
+/*Responsive*/
+@media (max-width: 768px){
+	.contenidoPrincipal-cursos{
+		flex-direction: column;
+	}
+	.contenidoPrincipal-cursos-link{
+		width: 100%;
+
+	}
+
+	.rodapePrincipal-navMap-list{
+		flex-wrap: nowrap;
+		height: auto;
+	}
+}

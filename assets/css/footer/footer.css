@@ -12,11 +12,11 @@ se utilizo "space-arround" para dar espacio alrrededor de los items*/
 }
 
 .rodapePrincipal-patrocinadores-list {            /*la lista ocupara 75% del espacio*/
-	display: flex;                                /*alineando items en fila*/
 	align-items: center;                          /*centrado de elemntos*/
+	display: flex;                                /*alineando items en fila*/
 	justify-content: space-around;				  /*espacio alrededor de los items*/
-	width: 70%;                                   /*el tamaño total de la calse sera de %70*/
 	margin-right: 5%;							  /*el %5 restante sera de margen derecho*/
+	width: 70%;                                   /*el tamaño total de la calse sera de %70*/
 }
 
 .rodapePrincipal-contatoForm{                     /*el %25 restante sera el tamaño del form*/
@@ -26,3 +26,26 @@ se utilizo "space-arround" para dar espacio alrrededor de los items*/
 .rodapePrincipal-contatoForm-fieldset{            
 	display: flex;								  /*display:  flex para alinear items en fila*/
 }
+
+/*Responsive*/
+@media (max-width: 768px){
+
+	.rodapePrincipal-patrocinadores .container {     
+		flex-direction: column;
+	}
+
+	.rodapePrincipal-contatoForm{
+		width: 100%;
+	}
+
+	.rodapePrincipal-patrocinadores-list{
+		align-items: center;
+		margin: 0;
+		width: 100%;
+	}
+
+	.rodapePrincipal-contatoForm-fieldset{
+		justify-content: center;
+	} 
+}
+

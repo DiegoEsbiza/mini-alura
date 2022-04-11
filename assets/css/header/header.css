@@ -7,12 +7,28 @@ finalente a la clase "headerPrincipal-nav" se le aplico un "display: flex" para 
 los items del header */
 
 .headerPrincipal .container{                        /*se llama a la calse padre seguido del container flex*/
-	display: flex;									/*se aplica la propiedad "flex" para alienear elementos*/
 	align-items: center;                            /*centra los elementos*/
+	display: flex;									/*se aplica la propiedad "flex" para alienear elementos*/
 	justify-content: space-between;					/*espacio entre elementos*/
 }
 
 .headerPrincipal-nav{
 	display: flex;
-	
+}
+
+/*Responsive*/
+@media (max-width: 768px){
+	.headerPrincipal .container{
+		align-items: initial;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.headerPrincipal-nav{
+		flex-direction: column;
+	}
+
+	.headerPrincipal-nav-link-app{
+		order: -1;
+	}
 }
